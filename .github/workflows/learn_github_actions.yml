@@ -12,3 +12,9 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make install
