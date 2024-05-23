@@ -1,3 +1,8 @@
+PYTHON := python3
+PIP := pip
+REQUIREMENTS := requirements.txt
+
+.PHONY: install
 install:
-	pip install --upgrade pip
-	pip install -r requirements.txt
+	$(PIP) install --upgrade $(PIP)
+	$(PIP) install -r $(REQUIREMENTS)
