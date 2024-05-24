@@ -1,3 +1,3 @@
-from hello import get_random_fruit
+from devopslib import hello
 
-print(get_random_fruit())
+print(hello.get_random_fruit())
