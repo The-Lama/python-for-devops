@@ -26,3 +26,10 @@ jobs:
       
       - name: Run make install
         run: make install
+
+      - name: check formating
+        run: |
+          pip install black
+          pip install black[jupyter]
+          black --check .
+          
