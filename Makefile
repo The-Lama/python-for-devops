@@ -12,3 +12,7 @@ install:
 dev-install:
 	$(PIP) install --upgrade $(PIP)
 	$(PIP) install -r $(DEV-REQUIREMENTS)
+
+.PHONY: lint
+lint:
+	pylint --disable=R,C *.py
